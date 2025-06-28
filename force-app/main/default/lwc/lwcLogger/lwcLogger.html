@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Logger Test Component" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+
+            <lightning-button-group>
+                <lightning-button label="Test Debug Log" onclick={handleDebugLog} class="slds-m-right_small">
+                </lightning-button>
+                <lightning-button label="Test Info Log" onclick={handleInfoLog} class="slds-m-right_small">
+                </lightning-button>
+                <lightning-button label="Test Error Log" onclick={handleErrorLog} class="slds-m-right_small">
+                </lightning-button>
+                <lightning-button label="Load Data" onclick={handleLoadData} class="slds-m-right_small">
+                </lightning-button>
+                <lightning-button label="Simulate Error" onclick={handleSimulateError} variant="destructive">
+                </lightning-button>
+            </lightning-button-group>
+
+            <template if:true={data}>
+                <div class="slds-m-top_medium">
+                    <h3>Data Loaded:</h3>
+                    <template for:each={data} for:item="item">
+                        <p key={item.id}>{item.name}</p>
+                    </template>
+                </div>
+            </template>
+
+            <template if:true={error}>
+                <div class="slds-m-top_medium">
+                    <lightning-formatted-text value={error} class="slds-text-color_error">
+                    </lightning-formatted-text>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

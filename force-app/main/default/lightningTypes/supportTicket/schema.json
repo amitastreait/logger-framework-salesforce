@@ -1,0 +1,5 @@
+{
+  "title": "Support Ticket",
+  "description": "Complete support ticket information with customer details and issue tracking",
+  "lightning:type": "@apexClassType/c__SupportTicketHandler$SupportTicket"
+}

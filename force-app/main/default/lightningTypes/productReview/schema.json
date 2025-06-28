@@ -1,0 +1,5 @@
+{
+  "title" : "Product Review",
+  "description" : "Customer product review with rating and feedback",
+  "lightning:type" : "@apexClassType/c__ProductReviewHandler$ProductReview"
+}

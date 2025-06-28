@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>ExampleUsage</members>
+		<members>FlowLogger</members>
+		<members>Logger</members>
+		<members>LoggerController</members>
+		<members>ProductReviewHandler</members>
+		<members>TriggerLogger</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>AccountLoggerTrigger</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>Update_Account_Industry</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>logger</members>
+		<members>lwcLogger</members>
+		<members>productReviewEditor</members>
+		<members>productReviewRenderer</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>productReview</members>
+		<name>LightningTypeBundle</name>
+	</types>
+	<version>64.0</version>
+</Package>
